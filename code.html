@@ -1,0 +1,492 @@
+<!DOCTYPE html><html lang="sv" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Pallas Bilvård - Skonsam handtvätt i centrala Borås</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "inverse-surface": "#313030",
+                "primary-container": "#4bb2ed",
+                "inverse-primary": "#86ceff",
+                "on-error-container": "#93000a",
+                "error": "#ba1a1a",
+                "on-secondary-fixed": "#000e5e",
+                "error-container": "#ffdad6",
+                "on-background": "#1c1b1b",
+                "tertiary": "#5e5e5f",
+                "on-primary-fixed": "#001e2e",
+                "surface-variant": "#e5e2e1",
+                "secondary-container": "#4c64fa",
+                "surface-container-highest": "#e5e2e1",
+                "on-secondary": "#ffffff",
+                "surface-dim": "#dcd9d9",
+                "inverse-on-surface": "#f3f0ef",
+                "secondary-fixed": "#dee0ff",
+                "on-primary": "#ffffff",
+                "on-surface": "#1c1b1b",
+                "on-secondary-container": "#fffbff",
+                "on-error": "#ffffff",
+                "secondary-fixed-dim": "#bbc3ff",
+                "secondary": "#2e48e0",
+                "primary-fixed": "#c8e6ff",
+                "surface-container-high": "#ebe7e7",
+                "tertiary-fixed-dim": "#c7c6c6",
+                "surface": "#F9F9F9",
+                "on-tertiary-container": "#3d3e3e",
+                "background": "#fcf9f8",
+                "outline": "#6f7880",
+                "on-surface-variant": "#3f484f",
+                "primary": "#00658f",
+                "surface-container-lowest": "#ffffff",
+                "surface-tint": "#00658f",
+                "on-secondary-fixed-variant": "#052dcc",
+                "primary-fixed-dim": "#86ceff",
+                "silver-accent": "#E2E8F0",
+                "outline-variant": "#bec8d1",
+                "on-primary-container": "#004260",
+                "surface-container": "#f0edec",
+                "deep-navy": "#0A192F",
+                "tertiary-container": "#a9a9a9",
+                "on-primary-fixed-variant": "#004c6d",
+                "on-tertiary-fixed": "#1a1c1c",
+                "tertiary-fixed": "#e3e2e2",
+                "surface-container-low": "#f6f3f2",
+                "on-tertiary-fixed-variant": "#464747",
+                "surface-bright": "#fcf9f8",
+                "on-tertiary": "#ffffff"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "gutter": "24px",
+                "container-max": "1200px",
+                "margin-desktop": "48px",
+                "margin-mobile": "16px",
+                "base": "8px",
+                "section-gap": "80px"
+        },
+        "fontFamily": {
+                "body-lg": [
+                        "Manrope"
+                ],
+                "body-md": [
+                        "Manrope"
+                ],
+                "display-lg": [
+                        "Manrope"
+                ],
+                "headline-lg-mobile": [
+                        "Manrope"
+                ],
+                "label-md": [
+                        "Manrope"
+                ],
+                "label-lg": [
+                        "Manrope"
+                ],
+                "headline-lg": [
+                        "Manrope"
+                ],
+                "headline-md": [
+                        "Manrope"
+                ]
+        },
+        "fontSize": {
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "28px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "display-lg": [
+                        "48px",
+                        {
+                                "lineHeight": "56px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "800"
+                        }
+                ],
+                "headline-lg-mobile": [
+                        "28px",
+                        {
+                                "lineHeight": "36px",
+                                "fontWeight": "700"
+                        }
+                ],
+                "label-md": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "fontWeight": "500"
+                        }
+                ],
+                "label-lg": [
+                        "14px",
+                        {
+                                "lineHeight": "20px",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-lg": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-md": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "fontWeight": "600"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        /* Glassmorphism Classes for Light Theme */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 101, 143, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+        }
+        .glass-header {
+            background: rgba(249, 249, 249, 0.9);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(0, 101, 143, 0.1);
+        }
+
+    </style>
+<style data-stitch-cursor="">*{cursor:auto}[contenteditable="true"]:focus,.cursor-text:focus{cursor:text!important}</style><style data-stitch-scroll-lock="">html,body{overflow:auto!important}</style><style>button, a { cursor: pointer!important; }</style></head>
+<body class="bg-surface text-on-surface font-body-md antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar Component -->
+<nav class="bg-surface fixed top-0 w-full z-50 border-b border-silver-accent shadow-sm">
+<div class="max-w-container-max mx-auto px-margin-desktop flex justify-between items-center h-20">
+<div class="flex items-center">
+<img alt="Pallas Bilvård Logo" class="h-12 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBj7aVCnyvxzUubM2OSGT4C6ZDf0ibRT9ObsBhC3L5d6NtDrqUGLJMizAonTLAbAK0GINAdm5zeUetb9t5tQm12js0D_Lib9eJtYZMG_lSrNU6Y8ulsLn9uSzTUjqmvlUBZDOsRYjcwAIb60qywwrlm5EHf5hrklVYlSDPNvSh7EBSAcyyM9foqW4c2kZZPq8EujvKvBcX9e6KsD-nEw9Y43gECsB77HiRiHYRGRVxJ-KQMq2ZAS92FiTAX5ehFOuNEBwuMNfI_4I">
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-lg text-label-lg text-primary border-b-2 border-primary pb-1 tracking-widest uppercase transition-transform active:scale-95" href="index.html">Hem</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200 tracking-widest uppercase active:scale-95" href="priser.html">Priser</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200 tracking-widest uppercase active:scale-95" href="https://pallasbilvard.valei.com/" target="_blank" rel="noopener">Boka Online</a>
+</div>
+<a class="bg-primary text-on-primary font-label-lg text-label-lg px-6 py-2.5 rounded hover:bg-primary/90 transition-colors duration-300 uppercase tracking-widest shadow-sm hidden md:inline-flex active:scale-95" href="https://pallasbilvard.valei.com/" target="_blank" rel="noopener">
+                Boka Nu
+            </a>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative w-full min-h-[921px] flex items-center justify-center pt-20 pb-[80px] overflow-hidden bg-surface">
+<!-- Background Image -->
+<div class="absolute inset-0 z-0">
+<img alt="High-end luxury car in a sleek setting" class="w-full h-full object-cover opacity-20 grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCr13kYALsUFnyRJdrDw06d61WEl5Uaxkc-FNP_8DEGgeHHZc7o9AgQ0kx5y5P2u0GdbHapEEoxomN3kr5coL3njsRfp-zphMWAS809Vymr2btlUiTTWo4qLrfJ8M75L382TUe0OwDThCm7AA6XPP-3S9Zrnb4MLqKgUhab-SsKh2P2IvCK1K-1vXrYygIV49KRjcpzsL1ex1ogR9NGnny4IuYLReY3ZH9Nxdu0KWAIgekT84NAXcCBgyVKq8bk50HbJpxmw-WCDuk">
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/80 to-surface/40"></div>
+</div>
+<div class="relative z-10 w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto flex flex-col items-center text-center">
+<!-- Trust Badges Strip -->
+<div class="flex flex-wrap justify-center gap-4 mb-[32px] animate-fade-in-up">
+<div class="flex items-center gap-2 glass-card rounded-full px-5 py-2 border border-outline-variant">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="font-label-md text-label-md text-deep-navy uppercase tracking-wider">4.9/5 Google Recensioner</span>
+</div>
+</div>
+<h1 class="font-display-lg text-headline-lg-mobile md:text-[64px] leading-tight text-deep-navy mb-6 max-w-5xl uppercase tracking-wider font-extrabold">
+                Enkelt, skonsamt och bekvämt. <br class="hidden md:block">
+<span class="text-primary">Bilvård på dina villkor.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mb-[32px] font-normal tracking-wide">
+                Lämna bilen och ta en sväng på stan – vi sköter resten.
+            </p>
+<div class="flex flex-col sm:flex-row gap-6 w-full sm:w-auto">
+<a class="bg-primary text-white font-label-lg text-label-lg px-10 py-4 rounded hover:bg-primary/90 transition-all duration-300 shadow-md flex items-center justify-center gap-2 uppercase tracking-widest font-bold" href="https://pallasbilvard.valei.com/" target="_blank" rel="noopener">
+                    Boka Online
+                    <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+<a class="bg-transparent border border-outline text-deep-navy font-label-lg text-label-lg px-10 py-4 rounded hover:bg-black/5 transition-all duration-300 flex items-center justify-center gap-2 uppercase tracking-widest font-bold" href="priser.html">
+                    Se Priser
+                </a>
+</div>
+</div>
+</section>
+<!-- Quick Benefits -->
+<section class="py-12 bg-surface relative z-20 -mt-10">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+<div class="glass-card p-6 rounded-lg flex flex-col items-center text-center gap-3 hover:-translate-y-1 transition-transform duration-300">
+<span class="material-symbols-outlined text-primary text-3xl">directions_car</span>
+<p class="text-on-surface-variant text-sm font-body-md">Vi tvättar alla typer av bilar: Personbilar, skåpbilar och mopedbilar</p>
+</div>
+<div class="glass-card p-6 rounded-lg flex flex-col items-center text-center gap-3 hover:-translate-y-1 transition-transform duration-300">
+<span class="material-symbols-outlined text-primary text-3xl">local_parking</span>
+<p class="text-on-surface-variant text-sm font-body-md">Gratis parkering i Pallashuset ingår</p>
+</div>
+<div class="glass-card p-6 rounded-lg flex flex-col items-center text-center gap-3 hover:-translate-y-1 transition-transform duration-300">
+<span class="material-symbols-outlined text-primary text-3xl">location_on</span>
+<p class="text-on-surface-variant text-sm font-body-md">Vår biltvätt ligger på plan 3 i Pallashusets parkeringsgarage i centrala Borås</p>
+</div>
+<div class="glass-card p-6 rounded-lg flex flex-col items-center text-center gap-3 hover:-translate-y-1 transition-transform duration-300">
+<span class="material-symbols-outlined text-primary text-3xl">water_drop</span>
+<p class="text-on-surface-variant text-sm font-body-md">Skonsam handtvätt av proffs</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Reviews Section -->
+<section class="py-16 bg-surface-container-low">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-10">
+<h2 class="font-headline-md text-deep-navy uppercase tracking-widest mb-2">Google Recensioner</h2>
+<div class="flex items-center justify-center gap-2 mb-2">
+<span class="material-symbols-outlined text-[#fbbc04]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[#fbbc04]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[#fbbc04]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[#fbbc04]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[#fbbc04]" style="font-variation-settings: &quot;FILL&quot; 1;">star_half</span>
+<span class="font-bold text-lg ml-2">4.9</span>
+</div>
+<p class="text-sm text-on-surface-variant uppercase tracking-wider">UTMÄRKT - Baserat på 39 recensioner</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-white p-6 rounded-xl shadow-sm border border-outline-variant/30">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary font-bold">E</div>
+<div>
+<h4 class="font-bold text-sm">Eunice Crawford</h4>
+<div class="flex text-[#fbbc04] text-xs">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+</div>
+</div>
+<p class="text-sm text-on-surface-variant">Bra service. Snabb o noga</p>
+</div>
+<div class="bg-white p-6 rounded-xl shadow-sm border border-outline-variant/30">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary font-bold">J</div>
+<div>
+<h4 class="font-bold text-sm">Jeanne May</h4>
+<div class="flex text-[#fbbc04] text-xs">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+</div>
+</div>
+<p class="text-sm text-on-surface-variant">Mycket nöjd med rekond, blev kanon!
+Tack så mycket till grabbarna!</p>
+</div>
+<div class="bg-white p-6 rounded-xl shadow-sm border border-outline-variant/30">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary font-bold">O</div>
+<div>
+<h4 class="font-bold text-sm">Oscar Dahlöf</h4>
+<div class="flex text-[#fbbc04] text-xs">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+</div>
+</div>
+<p class="text-sm text-on-surface-variant">Otroligt snabbt å effektivt med kanon resultat</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Grid -->
+<section id="priser" class="py-[80px] bg-surface-container-low">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-[48px]">
+<h2 class="font-headline-lg text-headline-lg text-deep-navy uppercase tracking-widest mb-4">Våra Populära Paket</h2>
+<p class="text-on-surface-variant max-w-3xl mx-auto mb-6 font-body-lg">Våra paket är utformade för att passa olika bilvårdsbehov – från snabb expresstvätt till grundlig silvertvätt med asfaltsborttagning.</p>
+<div class="h-1 w-20 bg-primary mx-auto mb-6"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white rounded-xl overflow-hidden flex flex-col border-t-4 border-t-tertiary-container shadow-sm border border-outline-variant/30">
+<div class="p-8 flex-grow">
+<h3 class="text-2xl font-headline-md text-deep-navy mb-2 uppercase">Expresstvätt</h3>
+<div class="flex items-baseline gap-2 mb-6">
+<span class="text-3xl text-deep-navy font-bold">299 kr*</span>
+<span class="text-on-surface-variant text-sm">/ 30 min</span>
+</div>
+<p class="text-on-surface-variant mb-6">Utvändig tvätt med schamponering och noggrann fälgrengöring, perfekt för snabba besök.</p>
+<ul class="space-y-3 text-on-surface-variant mb-8 font-body-md">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check</span> Handtvätt utvändigt</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check</span> Schamponering</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check</span> Tvätt av fälgar samt inkl. torkning av hela bilen och dörrlister</li>
+</ul>
+</div>
+<a class="w-full inline-flex items-center justify-center bg-primary text-white py-3 uppercase tracking-widest text-sm font-bold hover:bg-primary/90 transition-colors" href="https://pallasbilvard.valei.com/" target="_blank" rel="noopener">Boka Nu</a>
+</div>
+<div class="bg-white rounded-xl overflow-hidden flex flex-col border-t-4 border-t-primary shadow-sm border border-outline-variant/30">
+<div class="p-8 flex-grow">
+<h3 class="text-2xl font-headline-md text-deep-navy mb-2 uppercase">Grundtvätt</h3>
+<div class="flex items-baseline gap-2 mb-6">
+<span class="text-3xl text-deep-navy font-bold">499 kr*</span>
+<span class="text-on-surface-variant text-sm">/ 60 min</span>
+</div>
+<p class="text-on-surface-variant mb-6">Invändig och utvändig rengöring med extra omsorg för detaljer och interiör.</p>
+<ul class="space-y-3 text-on-surface-variant mb-8 font-body-md">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check</span> Handtvätt utvändigt</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check</span> Avfettning</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check</span> Schamponering</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check</span> Invändig rengöring och dammsugning</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check</span> Fönsterputs, torkning, mattvätt och dörrlistvård</li>
+</ul>
+</div>
+<a class="w-full inline-flex items-center justify-center bg-primary text-white py-3 uppercase tracking-widest text-sm font-bold hover:bg-primary/90 transition-colors" href="https://pallasbilvard.valei.com/" target="_blank" rel="noopener">Boka Nu</a>
+</div>
+<div class="bg-white rounded-xl overflow-hidden flex flex-col border-t-4 border-t-secondary shadow-sm border border-outline-variant/30">
+<div class="p-8 flex-grow">
+<h3 class="text-2xl font-headline-md text-deep-navy mb-2 uppercase">Silvertvätt</h3>
+<div class="flex items-baseline gap-2 mb-6">
+<span class="text-3xl text-deep-navy font-bold">699 kr*</span>
+<span class="text-on-surface-variant text-sm">/ 75 min</span>
+</div>
+<p class="text-on-surface-variant mb-6">Allt i grundtvätten plus professionell asfaltsborttagning för extra ren yta.</p>
+<ul class="space-y-3 text-on-surface-variant mb-8 font-body-md">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check</span> Handtvätt utvändigt</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check</span> Avfettning</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check</span> Schamponering</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check</span> Invändig rengöring, dammsugning, fönsterputs och mattvätt</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check</span> Torkning och tvättning av dörrlister</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check</span> Asfaltsborttagning</li>
+</ul>
+</div>
+<a class="w-full inline-flex items-center justify-center bg-primary text-white py-3 uppercase tracking-widest text-sm font-bold hover:bg-primary/90 transition-colors" href="https://pallasbilvard.valei.com/" target="_blank" rel="noopener">Boka Nu</a>
+</div>
+</div>
+<p class="text-on-surface-variant text-center mt-8 font-body-md">*För stora bilar tillkommer 100 kr.</p>
+</div>
+</section>
+<!-- Additional Services -->
+<section class="py-16 bg-surface">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto space-y-16">
+<div class="flex flex-col md:flex-row gap-8 items-center">
+<div class="w-full md:w-1/2">
+<h3 class="font-headline-lg text-2xl text-deep-navy uppercase tracking-widest mb-4">Polering, Vaxning och Keramiskt Lackskydd</h3>
+<p class="text-on-surface-variant font-body-lg">
+                    Investera i bilens värde – bevara lacken i toppskick och höj andrahandsvärdet...
+                </p>
+</div>
+<div class="w-full md:w-1/2">
+<div class="aspect-video bg-surface-variant rounded-xl flex items-center justify-center border border-outline-variant/20">
+<span class="material-symbols-outlined text-outline text-5xl">auto_awesome</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col md:flex-row-reverse gap-8 items-center">
+<div class="w-full md:w-1/2">
+<h3 class="font-headline-lg text-2xl text-deep-navy uppercase tracking-widest mb-4">Däckbyte &amp; Däckhotell</h3>
+<p class="text-on-surface-variant font-body-lg">
+                    Däckbyte – Smidigt och enkelt...
+                </p>
+</div>
+<div class="w-full md:w-1/2">
+<div class="aspect-video bg-surface-variant rounded-xl flex items-center justify-center border border-outline-variant/20">
+<span class="material-symbols-outlined text-outline text-5xl">tire_repair</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col md:flex-row gap-8 items-center">
+<div class="w-full md:w-1/2">
+<h3 class="font-headline-lg text-2xl text-deep-navy uppercase tracking-widest mb-4">Företagsavtal</h3>
+<p class="text-on-surface-variant font-body-lg">
+                    Biltvätt för ditt företag i Borås...
+                </p>
+</div>
+<div class="w-full md:w-1/2">
+<div class="aspect-video bg-surface-variant rounded-xl flex items-center justify-center border border-outline-variant/20">
+<span class="material-symbols-outlined text-outline text-5xl">business_center</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-24 bg-surface-container-low relative text-center border-t border-outline-variant/30 border-b border-outline-variant/30">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative z-10">
+<span class="material-symbols-outlined text-primary text-5xl mb-6 block">diamond</span>
+<h2 class="font-display-lg text-4xl md:text-5xl text-deep-navy mb-6 uppercase tracking-widest">Din Bil Förtjänar <br>Premiumvård</h2>
+<p class="text-on-surface-variant text-lg mb-10 max-w-2xl mx-auto font-body-lg">Upplev skillnaden med professionell bilvård anpassad för dig som värdesätter kvalitet och finish.</p>
+<a class="bg-primary text-white font-label-lg text-label-lg px-12 py-5 rounded hover:bg-primary/90 transition-all duration-300 shadow-md uppercase tracking-widest font-bold text-lg inline-flex items-center gap-3 justify-center" href="https://pallasbilvard.valei.com/" target="_blank" rel="noopener">
+            Boka Din Tid Idag
+            <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- Footer Component -->
+<footer class="bg-surface-container w-full border-t border-silver-accent">
+<div class="max-w-container-max mx-auto px-margin-desktop py-section-gap grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="flex flex-col gap-4">
+<img alt="Pallas Bilvård Logo" class="h-10 w-auto mb-2 opacity-80 mix-blend-multiply" src="https://www.pallasbilvard.se/wp-content/uploads/2024/08/Pallas-Bilvard-Logo_B-e1724338834537.png">
+<p class="font-body-md text-body-md text-on-surface-variant">Din lokala expert på professionell bilvård och rekond i centrala Borås.</p>
+</div>
+<div class="flex flex-col gap-4">
+<h3 class="font-headline-md text-body-lg font-semibold text-on-surface">Information</h3>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline decoration-primary underline-offset-4 transition-colors duration-200" href="priser.html">Priser</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline decoration-primary underline-offset-4 transition-colors duration-200" href="https://pallasbilvard.valei.com/" target="_blank" rel="noopener">Boka Online</a>
+</div>
+<div class="flex flex-col gap-4">
+<h3 class="font-headline-md text-body-lg font-semibold text-on-surface">Villkor &amp; Policy</h3>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline decoration-primary underline-offset-4 transition-colors duration-200" href="#">Integritetspolicy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline decoration-primary underline-offset-4 transition-colors duration-200" href="#">Allmänna Villkor</a>
+</div>
+<div class="flex flex-col gap-4">
+<h3 class="font-headline-md text-body-lg font-semibold text-on-surface">Kontakt</h3>
+<span class="font-body-md text-body-md text-on-surface-variant">Hallbergsplatsen 7, 503 30 Borås</span>
+<span class="font-body-md text-body-md text-on-surface-variant">033 10 10 98</span>
+<span class="font-body-md text-body-md text-on-surface-variant">info@pallasbilvard.se</span>
+<span class="font-body-md text-body-md text-on-surface-variant mt-2">Måndag - Fredag: 08:00 - 17:00</span>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop pb-8 text-center md:text-left border-t border-outline-variant/20 pt-8 mt-4">
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Pallas Bilvård. Alla rättigheter förbehållna.</p>
+</div>
+</footer>
+
+
+</body></html>
